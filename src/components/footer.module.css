@@ -8,11 +8,14 @@ opacity: 0.6;
 .container{
     background-color: rgb(13, 193, 115);
     position: relative;
-   top: 1000px;
-   height: 70px;
+   top: 1020px;
+   height: 60px;
    border-radius: 10px 10px 0px 0px;
 }
 .container h4{
     width: 30%;
-    margin-left: 40%;
+    margin-left: 42%;
+    position: relative;
+    bottom: 23px;
+    font-size: large;
 }
