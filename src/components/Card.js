@@ -39,7 +39,7 @@ ifShowBtn: false ,
     
      }
   render() {
-    const {image,name} = this.props
+    const {image,name , price} = this.props
         return (<>
       <div className={styles.container}>
         <img src={image} className={styles.image}/>
@@ -51,6 +51,9 @@ ifShowBtn: false ,
         <p>{this.state.counter}</p>
         <img src={up} onClick={this.upHandler}  />
        </div>
+       <div className={this.state.ifShow ? styles.price : styles.doNot} >
+            {price * this.state.counter} $
+      </div>
       </div>
        </>
     )

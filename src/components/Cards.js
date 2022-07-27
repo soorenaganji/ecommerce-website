@@ -7,9 +7,9 @@ import angular from '../cardsPics/angular.png'
 export default function cards() {
   return (
     <div className={styles.container}>
-<Card image={vuee} name={"Vue"} color={"green"} />
-<Card image={react} name={"React"} color={"blue"} className={styles.react}  />
-<Card image={angular} name={"Angular"} color={"red"} className={styles.angular}  />
+<Card image={vuee} name={"Vue"} color={"green"} price={350}  />
+<Card image={react} name={"React"} color={"blue"} className={styles.react} price={700}  />
+<Card image={angular} name={"Angular"} color={"red"} className={styles.angular} price={500} />
     </div>
   )
 }
