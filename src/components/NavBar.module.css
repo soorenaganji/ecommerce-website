@@ -1,6 +1,6 @@
 .main{
     display: flex;
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     width: 90%;
@@ -13,6 +13,7 @@
     margin-top: 0;
     padding-top: 0%;
     margin-left: 5%;
+    z-index: 9999999;
 }
 .navContainer{
     height: 100px;
@@ -35,6 +36,7 @@
 .navContainer li:hover {
 background-color: rgb(104, 180, 255);
 color: black;
+padding: 14px;
 
 }
 .logo{
@@ -67,9 +69,20 @@ color: black;
     border-radius: 5px;
     font-size: medium;
     padding: 2px;
-    background-color: rgb(58, 159, 247);
+    background-color: rgb(48, 140, 221);
     
 }
 .searchBar::placeholder{
     color: rgb(0, 0, 0);
+}
+.btn{
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(104, 180, 255) ;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 300ms linear;
+}
+.btn:hover{
+    padding: 15px;
 }

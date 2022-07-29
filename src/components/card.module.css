@@ -6,7 +6,6 @@
     height: 200px;
     display: block;
     z-index: 9;
-    background-color: white;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -26,9 +25,8 @@ position: relative;
 }
 .container:hover{
     background:rgba(65, 170, 255, 0.779);
-    bottom: 2px;
+    bottom: 10px;
     color: black;
-    box-shadow: 3px 3px 5px black;
 
 }
 .title{
