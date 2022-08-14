@@ -28,7 +28,7 @@ downHandler = () => {
       
           }))
   }
-}
+} 
 
    clickHandler = () => {
     this.setState(() => ({

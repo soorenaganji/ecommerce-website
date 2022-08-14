@@ -1,16 +1,19 @@
 import React from 'react';
-import Cards from './components/Cards';
-import NavBar from './components/NavBar';
-import Supporters from './components/supporters';
-import Footer from './components/footer';
+import Home from './components/Home'
+import { Route } from 'react-router-dom';
+import Products from './components/Products';
+import ContactUs from './components/ContactUs';
+import LoginOrSignup from './components/LoginOrSignup'
 const App = () => {
     
         return (
         <>
-       <NavBar/>
-       <Cards />
-       <Supporters />
-       <Footer/>
+           <div>
+            <Route exact path="/" component={Home} />
+            <Route path="/login" component={LoginOrSignup} />
+            <Route path="/products" component={Products} />
+            <Route path="/contactus" component={ContactUs} />
+           </div>
         </>
         );
     }

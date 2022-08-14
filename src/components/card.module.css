@@ -19,15 +19,18 @@ align-items: center;
 justify-content: flex-start;
 flex-direction: column;
 border-radius: 10px;
-transition: all 300ms;
+transition: all 300ms linear;
 position: relative;
 
 }
 .container:hover{
     background:rgba(65, 170, 255, 0.779);
-    bottom: 10px;
+    bottom: 30px;
     color: black;
 
+}
+.container:hover h3 , .container:hover p {
+    color: black;
 }
 .title{
     font-family: Arial, Helvetica, sans-serif;
@@ -45,7 +48,7 @@ position: relative;
     background-color: rgba(65, 170, 255, 0.779);
     color: rgb(0, 0, 0);
     padding: 0px 25px;
-    border-radius: 5px;
+    border-radius: 3px ;
     position: relative;
     transition: all 500ms linear ;
     font-size: 18px;
@@ -69,11 +72,12 @@ position: relative;
 .buy{
     border: none;
     background-color: rgba(169, 169, 169, 0.725);
-    font-size: larger;
+    font-size: large;
+
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 7px;
     transition: all 250ms linear ;
 }
 .buy:hover{
