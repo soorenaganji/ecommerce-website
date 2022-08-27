@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 9999;
+  position: relative;
+  top: 100px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+h1 {
+  color: white;
+}

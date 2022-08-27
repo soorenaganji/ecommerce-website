@@ -1,0 +1,155 @@
+.image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  z-index: 9;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 0px 1000px 1000px 0px;
+  margin-left: 0px;
+  margin-bottom: -20px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  height: 70%;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+.containeer {
+  flex-shrink: 0;
+  background-color: #292e3d;
+  width: 430px;
+  height: 230px;
+  border-radius: 10px;
+  transition: all 200ms linear;
+  position: relative;
+  margin-bottom: -50px;
+  cursor: pointer;
+  margin: 0px 20px -50px 20px;
+}
+.container {
+  background-color: #292e3d;
+  backdrop-filter: blur(10px);
+  width: 430px;
+  height: 230px;
+  border-radius: 10px;
+  transition: all 200ms linear;
+  position: relative;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.containeer .btn {
+  margin-bottom: 25px;
+  margin-left: 170px;
+}
+.container:hover,
+.containeer:hover {
+  background: rgb(104, 104, 252);
+  transform: translateY(-10px);
+  color: black;
+}
+
+.container:hover h3,
+.container:hover p {
+  color: black;
+}
+.containeer .title {
+  color: white;
+  font-size: medium;
+  margin-top: 10px;
+  margin-left: 80px;
+  text-align: center;
+}
+.title {
+  color: white;
+  font-size: medium;
+  margin-top: 5px;
+  text-align: center;
+}
+.matn {
+  color: white;
+  text-align: justify;
+  width: 50%;
+  position: relative;
+  bottom: 10px;
+  font-size: smaller;
+}
+.btn {
+  background-color: rgb(104, 104, 252);
+  color: rgb(0, 0, 0);
+  padding: 0px 5px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 500ms linear;
+  font-size: 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+  height: 40px;
+  margin-bottom: 44px;
+  margin-left: 160px;
+}
+.btn p {
+  padding: 0px 8px;
+  color: black;
+}
+.btn img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 150ms linear;
+}
+.buy {
+  border: none;
+  background-color: rgba(51, 51, 51, 0.913);
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 1000px 0px 0px 1000px;
+  margin-top: 10px;
+  transition: all 250ms linear;
+  width: 180px;
+  height: 45px;
+  margin-left: 250px;
+}
+.buy:hover {
+  background: rgb(41, 217, 73);
+  width: 200px;
+  margin-left: 230px;
+  color: black;
+  border-radius: 1000px 0px 0px 1000px;
+  padding: 0;
+}
+.doNot {
+  display: none;
+}
+.btn img:hover,
+.containeer .btn img:hover {
+  background-color: #2ffb73;
+}
+.btn .down:hover,
+.containeer .btn .down:hover {
+  background-color: rgb(230, 31, 31);
+}
+.price {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  width: 20%;
+  margin-right: -10px;
+}
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  font-size: 18px;
+}

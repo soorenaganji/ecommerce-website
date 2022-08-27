@@ -1,0 +1,111 @@
+.container {
+  height: 70%;
+  width: 90%;
+  background-color: #10121c;
+  position: relative;
+  top: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-left: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 6%;
+}
+* {
+  font-family: "Poppins";
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 50px;
+}
+.back {
+  height: 400px;
+  width: 40%;
+  background: url(baack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 25%;
+  position: relative;
+  margin-top: 15%;
+  border-radius: 5px;
+}
+.main {
+  width: 50%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+input,
+button {
+  border: 1px solid rgb(87, 87, 255);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #292e3d;
+  color: rgb(255, 255, 255);
+  transition: all 300ms linear;
+}
+.email,
+.password {
+  width: 51.5%;
+  height: 35px;
+  margin-bottom: 30px;
+  font-size: large;
+  margin-left: 3%;
+}
+.email::placeholder,
+.password::placeholder {
+  color: rgba(255, 255, 255, 0.89);
+}
+.email:focus,
+.password:focus {
+  background-color: rgb(118, 118, 255);
+  border: 1px solid #292e3d;
+  color: black;
+}
+p {
+  color: rgb(255, 255, 255);
+  margin-left: 2%;
+}
+.submit {
+  background-color: rgb(104, 104, 252);
+  border: none;
+  width: 330px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 2% 10% 0% 0%;
+  cursor: pointer;
+  transform: translateX(10px);
+}
+.useLess {
+  background-color: #292e3d;
+  border: 1px solid rgb(87, 87, 255);
+}
+.submit:hover {
+  background-color: rgb(47, 251, 115);
+  color: black;
+}
+.idk {
+  margin-left: 3%;
+}
+.math {
+  margin-top: -8%;
+  margin-bottom: 40px;
+}
+.link {
+  color: rgb(87, 87, 255);
+  text-decoration: underline;
+}
+.hidden {
+  display: none;
+}
+.emailError {
+  margin-top: -4%;
+  margin-left: 2%;
+  color: rgb(252, 39, 39);
+  font-size: smaller;
+}

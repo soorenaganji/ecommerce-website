@@ -1,21 +1,29 @@
-import React from 'react';
-import Home from './components/Home'
-import { Route } from 'react-router-dom';
-import Products from './components/Products';
-import ContactUs from './components/ContactUs';
-import LoginOrSignup from './components/LoginOrSignup'
+import React from "react";
+import Home from "./components/Sections/Home/Home";
+import { Route } from "react-router-dom";
+import Products from "./components/Sections/Products/Products";
+import LoginOrSignup from "./components/Sections/LoginorSignup/LoginOrSignup";
+import NavBar from "./components/Global/NavBar";
+import Footer from "./components/Global/footer";
+import Login from "./components/Sections/LoginorSignup/login";
+import styles from "./App.module.css";
+import forgotPass from "./components/Sections/LoginorSignup/forgotPass";
+import About from "./components/Sections/Home/About/About";
 const App = () => {
-    
-        return (
-        <>
-           <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/login" component={LoginOrSignup} />
-            <Route path="/products" component={Products} />
-            <Route path="/contactus" component={ContactUs} />
-           </div>
-        </>
-        );
-    }
+  return (
+    <div className={styles.container}>
+      <NavBar />
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/signup" component={LoginOrSignup} />
+        <Route path="/products" component={Products} />
+        <Route path="/aboutUs" component={About} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/forgotPass" component={forgotPass} />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

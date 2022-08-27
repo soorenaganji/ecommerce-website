@@ -1,0 +1,19 @@
+.headerImage {
+  position: absolute;
+  background: url(./background.jpg);
+  width: 90%;
+  margin-left: 10%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  left: 0%;
+  right: 0%;
+  border-radius: 800px 0px 0px 800px;
+  z-index: 0;
+}
+.headerImage h1 {
+  width: 30%;
+  margin-right: 80%;
+  margin-top: 15%;
+}

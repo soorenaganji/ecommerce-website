@@ -1,0 +1,192 @@
+.container {
+  height: 70%;
+  width: 90%;
+  background-color: #10121c;
+  position: relative;
+  top: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-left: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 6%;
+  margin-bottom: -10%;
+}
+* {
+  font-family: "Poppins";
+}
+.container h1 {
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  font-size: 50px;
+  width: 150%;
+}
+.back {
+  height: 400px;
+  width: 35%;
+  background: url(baack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15%;
+  position: relative;
+  margin-left: 0%;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: #e9e9e9;
+}
+.main {
+  width: 50%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 15%;
+  flex-shrink: 0;
+}
+
+.name,
+.lastName,
+.email,
+.password,
+.submit {
+  border: 1px solid #7676ff;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #292e3d;
+  color: rgb(255, 255, 255);
+  transition: all 300ms linear;
+  flex-shrink: 0;
+}
+.nameAndLastName {
+  width: 94.5%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: -2%;
+}
+.name,
+.lastName {
+  width: 38%;
+  height: 35px;
+  font-size: large;
+}
+.name,
+.lastName {
+  margin-left: 5%;
+}
+.name::placeholder,
+.lastName::placeholder {
+  color: rgba(255, 255, 255, 0.89);
+  font-size: medium;
+}
+.email,
+.password {
+  width: 84.5%;
+  height: 35px;
+  margin-bottom: 30px;
+  font-size: large;
+  margin-left: 3%;
+}
+.email::placeholder,
+.password::placeholder {
+  color: rgba(255, 255, 255, 0.89);
+}
+.name:focus,
+.lastName:focus,
+.email:focus,
+.password:focus,
+.NameError:focus {
+  background-color: rgb(104, 104, 252);
+  border: 1px solid #292e3d;
+  color: black;
+}
+.submit {
+  background-color: rgb(118, 118, 255);
+  border: none;
+  width: 93%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 3% 6% 3% 0%;
+  cursor: pointer;
+  margin-top: -1%;
+  margin-bottom: 10%;
+}
+.submit:hover {
+  background-color: #2ffb73;
+  color: black;
+}
+.idk {
+  margin-left: 3%;
+}
+.useLess:hover {
+  background-color: rgb(117, 117, 248);
+  border: 1px solid #292e3d;
+}
+.math {
+  margin-top: -12%;
+  margin-bottom: 40px;
+}
+.link {
+  color: rgb(87, 87, 255);
+  text-decoration: underline;
+}
+.hidden {
+  display: none;
+}
+.emailError,
+.PasswordError {
+  width: 86.5%;
+  margin-top: -4%;
+  margin-left: 3%;
+  color: rgb(252, 39, 39);
+  font-size: smaller;
+}
+.EmailError {
+  border: 1px solid red;
+  width: 84.5%;
+  height: 35px;
+  margin-bottom: 30px;
+  font-size: large;
+  margin-left: 3%;
+}
+.EmailError::placeholder {
+  color: rgba(255, 255, 255, 0.89);
+}
+.EmailError:focus {
+  width: 84.5%;
+  background-color: rgb(104, 104, 252);
+  border: 1px solid #292e3d;
+  color: black;
+}
+.nameError {
+  color: red;
+  font-size: smaller;
+}
+.NameError {
+  width: 38%;
+  height: 35px;
+  font-size: large;
+  flex-shrink: 0;
+  border: 1px solid red;
+  margin-left: 5%;
+}
+.NameError::placeholder {
+  color: rgba(255, 255, 255, 0.89);
+}
+.container form {
+  width: 100%;
+}
+.errors {
+  width: 75%;
+  margin-top: -5.5%;
+  margin-bottom: 0%;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

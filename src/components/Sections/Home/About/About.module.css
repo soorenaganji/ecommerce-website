@@ -1,0 +1,48 @@
+.container {
+  width: 95%;
+  height: 500px;
+  background: rgb(185, 205, 252);
+  position: relative;
+  top: 500px;
+  margin-bottom: 100px;
+  border-radius: 0px 1000px 1000px 0px;
+}
+.cont,
+.containeer .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container h1,
+.containeer h1 {
+  color: black;
+  margin-right: 50%;
+  font-size: xx-large;
+  position: relative;
+  top: 30px;
+}
+.container p,
+.containeer p {
+  width: 40%;
+  text-align: justify;
+  color: black;
+  font-size: large;
+}
+.container img,
+.containeer img {
+  width: 30%;
+  height: 90%;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 20px;
+}
+.containeer {
+  width: 95%;
+  height: 500px;
+  background: rgb(185, 205, 252);
+  position: relative;
+  top: 200px;
+  margin-bottom: 100px;
+  border-radius: 0px 1000px 1000px 0px;
+  margin-bottom: 300px;
+}
