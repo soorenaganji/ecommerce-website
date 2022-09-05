@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React, { useContext } from "react";
 import styles from "./NavBar.module.css";
-import logo from "../../logo.png";
+import logo from "../../logo.webp";
 import { Link } from "react-router-dom";
 import search from "./search.svg";
-export default function NavBar({ home }) {
+import logoMain from "../../logoMain.webp";
+import { CartContext } from "../../Context/CartContextProvider";
+export default function NavBar() {
+  const { state } = useContext(CartContext);
   return (
     <>
       <div className={styles.main}>
@@ -34,10 +37,26 @@ export default function NavBar({ home }) {
             <img src={search} className={styles.icon} />
           </button>
         </form>
-        <button className={styles.btn}>
-          <Link to="/signup">Login/Signup</Link>
+        <Link to={"/login"} className={styles.loginBtn}>
+          Login
+        </Link>
+        <button className={styles.signupBtn}>
+          <Link to="/signup">Signup</Link>
         </button>
-        <img src={logo} className={styles.logo} />
+        <div>
+          <p className={state.itemsCounter ? styles.num : styles.null}>
+            {state.itemsCounter}
+          </p>
+          <Link to={"/Cart"}>
+            <img
+              src={logo}
+              className={state.itemsCounter ? styles.logo : styles.logo2}
+            />
+          </Link>
+        </div>
+        <Link to={"/"}>
+          <img src={logoMain} className={styles.logo3} />
+        </Link>
       </div>
     </>
   );

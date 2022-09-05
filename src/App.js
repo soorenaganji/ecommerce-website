@@ -9,19 +9,29 @@ import Login from "./components/Sections/LoginorSignup/login";
 import styles from "./App.module.css";
 import forgotPass from "./components/Sections/LoginorSignup/forgotPass";
 import About from "./components/Sections/Home/About/About";
+import ProductsDetails from "./components/Sections/Products/ProductsDetails";
+import ProductContextProvider from "./Context/ProductContextProvider";
+import CartContextProvider from "./Context/CartContextProvider";
+import Cart from "./components/Sections/Cart/Cart";
 const App = () => {
   return (
     <div className={styles.container}>
-      <NavBar />
-      <div>
-        <Route exact path="/" component={Home} />
-        <Route path="/signup" component={LoginOrSignup} />
-        <Route path="/products" component={Products} />
-        <Route path="/aboutUs" component={About} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/forgotPass" component={forgotPass} />
-      </div>
-      <Footer />
+      <ProductContextProvider>
+      <CartContextProvider> 
+        <NavBar />
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route path="/signup" component={LoginOrSignup} />
+          <Route exact path="/products" component={Products} />
+          <Route exact path="/Cart" component={Cart} />
+          <Route path="/products/:id" component={ProductsDetails} />
+          <Route path="/aboutUs" component={About} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/forgotPass" component={forgotPass} />
+        </div>
+        <Footer />
+        </CartContextProvider> 
+      </ProductContextProvider>
     </div>
   );
 };

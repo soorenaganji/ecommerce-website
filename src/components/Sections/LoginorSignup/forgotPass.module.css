@@ -22,14 +22,15 @@ h1 {
   font-size: 50px;
 }
 .back {
-  height: 300px;
-  width: 30%;
+  height: 400px;
+  width: 40%;
   background: url(baack.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   top: 25%;
   position: relative;
   margin-top: 12%;
+  border-radius: 5px;
 }
 .main {
   width: 50%;

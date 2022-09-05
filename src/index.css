@@ -1,9 +1,19 @@
 .Toastify__toast {
   background-color: #121212;
+  border-radius: 10px;
+  height: 2px;
+  color: white;
 }
 .Toastify__progress-bar {
   background-color: #7676ff;
+  border-radius: 10px;
+  height: 2px;
 }
 .Toastify__close-button {
   color: white;
+}
+.Toastify__progress-bar--error {
+  background-color: rgb(255, 44, 44);
+  border-radius: 10px;
+  height: 2px;
 }

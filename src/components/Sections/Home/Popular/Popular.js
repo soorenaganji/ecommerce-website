@@ -1,25 +1,49 @@
-import React , { useState } from 'react';
-import Product from '../../Products/Product';
-import shoes from './IMG_1220.JPG'
-import Hoodie from './IMG_1217.JPG'
-import Jacket from './IMG_1219.JPG'
-import Shorts from './IMG_1218.JPG'
-import styles from './Popular.module.css'
+import React, { useState, useContext, useEffect } from "react";
+import Product from "../../Products/Product";
+import styles from "./Popular.module.css";
+import { ProductContext } from "../../../../Context/ProductContextProvider";
+
 const Popular = () => {
-    return (
-        <>
-        <div className={styles.cont} >
+  const Data = useContext(ProductContext);
+  return (
+    <>
+      <div className={styles.cont}>
         <h1>Populars</h1>
-        <div className={styles.container} >
-         <Product title="Pinky NIKE Sneakers" image={shoes} Popular={true} price={200} />
-         <Product title="Yellow/Black Off white Hoodie" image={Hoodie} Popular={true} price={990}/>
-         <Product title="Blue/Black Under Armor Jacket" image={Jacket} Popular={true} price={740} />
-         <Product title="Black Jean Shorts"  image={Shorts} Popular={true} price={150} />
-         <Product title="Yellow/Black Off white Hoodie" image={Hoodie} Popular={true} price={990}/>
-         <Product title="Black Jean Shorts"  image={Shorts} Popular={true} price={150} />
-        </div></div>
-        </>
-    );
-    };
+        <div className={styles.container}>
+          <Product
+            key={33}
+            productData={Data[2]}
+            className={styles.product}
+            home={true}
+          />
+          <Product
+            key={43}
+            productData={Data[7]}
+            className={styles.product}
+            home={true}
+          />
+          <Product
+            key={53}
+            productData={Data[18]}
+            className={styles.product}
+            home={true}
+          />
+          <Product
+            key={63}
+            productData={Data[11]}
+            className={styles.product}
+            home={true}
+          />
+          <Product
+            key={73}
+            productData={Data[13]}
+            className={styles.product}
+            home={true}
+          />
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Popular;

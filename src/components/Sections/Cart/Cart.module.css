@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: white;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  background-color: #121724;
+  border-radius: 10px;
+}
+.cont button {
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  font-size: larger;
+}
+.cont button:hover {
+  background-color: #6868fc;
+  color: white;
+}
+.cont p {
+  background-color: #ffb44b;
+  padding: 100px 20px;
+  border-radius: 100px 100px 0px 0px;
+  color: black;
+}
+.checkOut {
+  background-color: rgb(55, 255, 98);
+  border: none;
+  color: black;
+  width: 200px;
+  height: 60px;
+  font-size: larger;
+}
+.link {
+  color: rgb(121, 121, 255);
+  text-decoration: underline;
+  text-align: center;
+  font-size: larger;
+}
