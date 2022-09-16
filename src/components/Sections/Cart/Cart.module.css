@@ -19,6 +19,7 @@
   width: 200px;
   height: 60px;
   font-size: larger;
+  border-radius: 10px;
 }
 .cont button:hover {
   background-color: #6868fc;
@@ -26,8 +27,8 @@
 }
 .cont p {
   background-color: #ffb44b;
-  padding: 100px 20px;
-  border-radius: 100px 100px 0px 0px;
+  padding: 20px;
+  border-radius: 10px;
   color: black;
 }
 .checkOut {
@@ -43,4 +44,19 @@
   text-decoration: underline;
   text-align: center;
   font-size: larger;
+}
+@media screen and (max-width: 500px) {
+  .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-color: #121724;
+    border-radius: 10px;
+  }
+  h1{
+    font-size: 25px;
+  }
 }

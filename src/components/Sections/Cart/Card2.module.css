@@ -68,3 +68,122 @@
 .containeer .btn .down:hover {
   background-color: rgb(255, 75, 75);
 }
+@media screen and (max-width: 768px) {
+  .btn button {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+  .btn {
+    background-color: #8a8aff;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 15px 0px 0px 15px;
+    position: relative;
+    transition: all 500ms linear;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 105px;
+    height: 55px;
+    margin-bottom: 44px;
+  }
+  .btn p {
+    padding: -10px;
+    color: black;
+    font-size: 15px;
+  }
+  .btn img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 150ms linear;
+  }
+  .container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 5%;
+    border-radius: 10px;
+    background-color: #292e3d;
+  }
+  .image {
+    width: 115px;
+    height: 100px;
+    display: block;
+    z-index: 9;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 100px 1000px 1000px 100px;
+    margin-right: 100px;
+  }
+  .container h3 {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 500px) {
+  .btn button {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+  .btn {
+    background-color: #8a8aff;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    transition: all 500ms linear;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 105px;
+    height: 55px;
+    margin-bottom: 44px;
+  }
+  .btn p {
+    padding: -10px;
+    color: black;
+    font-size: 15px;
+  }
+  .btn img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 150ms linear;
+  }
+  .container {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 2.5%;
+    border-radius: 10px;
+    background-color: #292e3d;
+    flex-direction: column;
+  }
+  .image {
+    width: 120px;
+    height: 120px;
+    display: block;
+    z-index: 9;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .container h3 {
+    font-size: 13px;
+  }
+}

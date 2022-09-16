@@ -21,7 +21,7 @@ const Cart = () => {
             <span>Total Payment : </span>
             {Math.round(state.total)} $
           </p>
-          <a href="https://www.google.com/search?q=Fuck+you&sxsrf=ALiCzsaj3QEtIMgBdNVExhRyQzDO37s6Yg%3A1662115677529&ei=Xd8RY-S8H5eF9u8P7c-suAQ&ved=0ahUKEwik36K09_X5AhWXgv0HHe0nC0cQ4dUDCA4&uact=5&oq=Fuck+you&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjEOoCECc6CgguEMcBENEDECc6BAgjECc6BAgAEEM6CgguEMcBENEDEEM6BQgAEIAEOgsILhCABBDHARDRAzoFCC4QkQI6BQgAEJECOgUILhCABDoOCC4QgAQQxwEQ0QMQ1AI6CwguEIAEEMcBEK8BOggILhCABBDUAkoECEEYAEoECEYYAFAAWMNDYMtFaANwAXgAgAHOAogBrxWSAQUyLTkuMZgBAKABAbABCrgBA8ABAQ&sclient=gws-wiz" target={"_blank"} >
+          <a href="https://www.google.com" target={"_blank"} >
             <button className={styles.checkOut}>Check Out</button>
           </a>
           

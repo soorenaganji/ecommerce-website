@@ -39,8 +39,11 @@ h1 {
   margin-left: 15%;
 }
 
-input,
-button {
+.name,
+.lastName,
+.email,
+.password,
+.submit {
   border: 1px solid rgb(87, 87, 255);
   border-radius: 8px;
   padding: 10px;
@@ -108,4 +111,256 @@ p {
   margin-left: 2%;
   color: rgb(252, 39, 39);
   font-size: smaller;
+}
+@media screen and (max-width: 1388px) {
+  .back {
+    height: 350px;
+    width: 35%;
+    background: url(baack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 27%;
+    position: relative;
+    margin-left: 0%;
+    flex-shrink: 0;
+    border-radius: 0px 1000px 1000px 1000px;
+    background-color: #e9e9e9;
+    margin-right: 5%;
+  }
+  * {
+    flex-shrink: 1;
+  }
+  .main {
+    width: 80%;
+    height: 80%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: -50%;
+    flex-shrink: 0;
+  }
+
+  .nameAndLastName {
+    width: 74.5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: -2%;
+    flex-shrink: 0;
+  }
+  .email,
+  .password {
+    width: 55%;
+    height: 35px;
+    margin-bottom: 30px;
+    font-size: large;
+    margin-left: 3%;
+    flex-shrink: 0;
+  }
+  .submit {
+    background-color: rgb(118, 118, 255);
+    border: none;
+    width: 59%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 3% 0% 0% 0%;
+    cursor: pointer;
+    margin-top: -1%;
+    margin-bottom: 10%;
+  }
+  .emailError,
+  .PasswordError {
+    width: 65%;
+    margin-top: -4%;
+    margin-left: 3%;
+    color: rgb(252, 39, 39);
+    font-size: smaller;
+  }
+  .EmailError {
+    border: 1px solid red;
+    width: 65%;
+    height: 35px;
+    margin-bottom: 30px;
+    font-size: large;
+    margin-left: 3%;
+  }
+  .EmailError::placeholder {
+    color: rgba(255, 255, 255, 0.89);
+  }
+  .EmailError:focus {
+    width: 65%;
+    background-color: rgb(104, 104, 252);
+    border: 1px solid #292e3d;
+    color: black;
+  }
+}
+@media screen and (max-width: 800px) {
+  .back {
+    display: none;
+  }
+  .container h1 {
+    width: 100%;
+    font-size: 30px;
+    flex-shrink: 0;
+  }
+  .email,
+  .password {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 30px;
+    font-size: large;
+    margin-left: 3%;
+    flex-shrink: 0;
+  }
+  .container {
+    height: 70%;
+    width: 95%;
+    background-color: #10121c;
+    position: relative;
+    top: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: -26%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10%;
+  }
+  .main {
+    width: 90%;
+    height: 80%;
+    margin-top: 15%;
+    flex-shrink: 0;
+    margin-right: -10%;
+  }
+
+  .submit {
+    background-color: rgb(104, 104, 252);
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 2% 10% 0% 0%;
+    cursor: pointer;
+    transform: translateX(0px);
+  }
+  .container {
+    height: 70%;
+    width: 60%;
+    background-color: #10121c;
+    position: relative;
+    top: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 0%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 648px) {
+  .main {
+    width: 90%;
+    height: 80%;
+    margin-top: 15%;
+    margin-left: 0%;
+    margin-right: 0%;
+    flex-shrink: 0;
+  }
+  .container {
+    overflow: hidden;
+    margin: 0%;
+    width: 100%;
+    padding: 0;
+  }
+  h1 {
+    width: 100%;
+    font-size: 10px;
+  }
+  .name,
+  .lastName {
+    width: 49%;
+    height: 35px;
+    font-size: large;
+  }
+  .nameAndLastName {
+    margin-left: 2%;
+  }
+  .email,
+  .password {
+    width: 82%;
+    height: 35px;
+    margin-bottom: 30px;
+    font-size: large;
+    margin-left: 5.5%;
+  }
+  .nameError,
+  .emailError,
+  .PasswordError {
+    font-size: x-small;
+  }
+  .NameError {
+    width: 56%;
+    height: 35px;
+    font-size: large;
+    flex-shrink: 0;
+    border: 1px solid red;
+    margin-left: 5%;
+  }
+  .EmailError {
+    border: 1px solid red;
+    width: 90%;
+    height: 35px;
+    margin-bottom: 30px;
+    font-size: large;
+    margin-left: 3%;
+  }
+  .EmailError:focus {
+    width: 90%;
+    background-color: rgb(104, 104, 252);
+    border: 1px solid #292e3d;
+    color: black;
+  }
+  .submit {
+    background-color: rgb(118, 118, 255);
+    border: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 2%;
+    cursor: pointer;
+    margin-top: -1%;
+    margin-bottom: 10%;
+  }
+  .container h1 {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 40px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .name,
+  .lastName {
+    width: 45%;
+    height: 35px;
+    font-size: large;
+  }
+  .NameError {
+    width: 45%;
+    height: 35px;
+    font-size: large;
+    flex-shrink: 0;
+    border: 1px solid red;
+    margin-left: 5%;
+  }
 }

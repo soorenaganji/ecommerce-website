@@ -12,9 +12,8 @@ const Card2 = (props) => {
     <div className={styles.container}>
       <img src={image} className={styles.image} />
       <h3>{shortener(title)}</h3>
-
       <div className={styles.container3}>
-        <p>{Math.round(price) * quantity}</p>
+        <p className={styles.price} >{Math.round(price) * quantity}</p>
         <div className={styles.btn}>
           {quantity > 1 ? (
             <img

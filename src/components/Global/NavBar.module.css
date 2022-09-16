@@ -1,4 +1,5 @@
-.main {
+.main,
+.off {
   display: flex;
   position: fixed;
   align-items: center;
@@ -7,6 +8,7 @@
   height: 70px;
   background-color: #1e2032c7;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 20px;
   top: 3px;
@@ -14,6 +16,10 @@
   padding-top: 0%;
   margin-left: 5%;
   z-index: 9999999;
+  transition: all 200ms linear;
+}
+.ResponsiveSearch {
+  display: none;
 }
 input::placeholder {
   opacity: 0.6;
@@ -22,6 +28,9 @@ input::after,
 input:focus {
   border: none;
   outline: none;
+}
+.responsiveMenu {
+  display: none;
 }
 Link,
 a {
@@ -90,11 +99,11 @@ a {
   border-radius: 4px;
   background-color: rgb(104, 104, 252);
   cursor: pointer;
-  padding: 8px 15px;
+  padding: 8px 12px;
   transition: all 300ms linear;
   color: white;
   font-size: 16px;
-  margin-left: -3%;
+  margin-left: 0%;
 }
 .signupBtn:hover {
   padding: 8px 25px;
@@ -113,6 +122,7 @@ a {
   margin-left: -20px;
   border-radius: 0px 5px 5px 0px;
   filter: grayscale(1000);
+  background-color: #292e3d;
 }
 .forme button:hover {
   filter: grayscale(0);
@@ -140,13 +150,336 @@ a {
 }
 .loginBtn {
   cursor: pointer;
-  padding: 8px 0px 8px 8px;
-  border-radius: 3px;
+  padding: 8px 18px;
+  border-radius: 5px;
   transition: all 400ms;
-  color: white !important ;
+  color: white;
   font-size: 15px;
+  margin-right: 5px;
+  border: 1.5px solid #838bfc;
 }
 .loginBtn:hover {
-  background-color: #6872fc;
-  padding: 10px 15px 10px 15px;
+  background-color: #292e3d;
+  padding: 8px 22px;
+}
+@media Screen and (max-width: 800px) {
+  .main {
+    flex-direction: column-reverse;
+    width: 100px;
+    height: 85vh;
+    font-size: medium;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 8.5vh;
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .off {
+    flex-direction: column-reverse;
+    width: 100px;
+    height: 85vh;
+    font-size: medium;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    transform: translateX(-95px);
+    margin-top: 8.5vh;
+    left: 0;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    width: 100px;
+    height: 85vh;
+    font-size: medium;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav {
+    padding: 10px 20px 10px 0px;
+    font-size: small;
+    margin: 20px 0px;
+  }
+
+  .main .searchBar,
+  .off .searchBar {
+    display: none;
+  }
+  .main .forme button,
+  .off .forme button {
+    display: none;
+  }
+  .main .forme,
+  .off .forme {
+    margin-bottom: -20px;
+  }
+  .logo3 {
+    width: 45px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .loginAndSignup {
+    width: 100%;
+    display: flex;
+    font-size: small;
+  }
+  .main .signupBtn,
+  .off .signupBtn {
+    display: none;
+  }
+  .loginBtn {
+    display: none;
+  }
+  .navContainer {
+    margin-top: -10vh;
+  }
+  .navContainer li:hover {
+    background-color: #6868fc;
+    padding: 12px 10px;
+    margin-left: -30px;
+    border-radius: 100px 0px 0px 100px;
+  }
+  .responsiveMenu {
+    display: block;
+    background-color: #a9aedc;
+    backdrop-filter: blur(15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: -5vh;
+    margin-bottom: -2vh;
+    transition: all 200ms;
+    padding: 20px 2px;
+    position: relative;
+    top: 35vh;
+  }
+  .forme {
+    flex-shrink: 0;
+    width: 50%;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30%;
+    position: relative;
+    right: 10%;
+    overflow: hidden;
+  }
+  .main .logo,
+  .main .logo2,
+  .off .logo,
+  .off .logo2,
+  .main .num,
+  .off .num {
+    display: none;
+  }
+  .ResponsiveSearch {
+    width: 100%;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1e2032c7;
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999998;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+    margin-top: -30px;
+    margin-right: 20px;
+  }
+  .logo2 {
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  .signupBtn {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(104, 104, 252);
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: all 300ms linear;
+    color: white;
+    font-size: 16px;
+    margin-left: 3%;
+    overflow: hidden;
+  }
+}
+@media Screen and (max-width: 768px) {
+  .signupBtn {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(104, 104, 252);
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: all 300ms linear;
+    color: white;
+    font-size: 13px;
+    margin-left: 3%;
+    overflow: hidden;
+  }
+  .forme {
+    flex-shrink: 0;
+    width: 50%;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30%;
+    position: relative;
+    right: 10%;
+    overflow: hidden;
+  }
+  .searchBar {
+    width: 80%;
+    height: 40px;
+    position: relative;
+    right: 5%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: small;
+    padding: 2px;
+    background-color: #6868fc;
+    flex-shrink: 0;
+    padding-left: 10px;
+    font-family: "Poppins";
+  }
+}
+@media Screen and (max-width: 500px) {
+  .signupBtn {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(104, 104, 252);
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: all 300ms linear;
+    color: white;
+    font-size: 13px;
+    margin-left: 3%;
+    overflow: hidden;
+  }
+  .forme {
+    flex-shrink: 0;
+    width: 50%;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    position: relative;
+    right: 5%;
+    overflow: hidden;
+  }
+  .searchBar {
+    width: 80%;
+    height: 40px;
+    position: relative;
+    right: 5%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 11px;
+    padding: 2px;
+    background-color: #6868fc;
+    flex-shrink: 0;
+    padding-left: 10px;
+    font-family: "Poppins";
+  }
+}
+@media Screen and (max-width: 430px) {
+  .signupBtn {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(104, 104, 252);
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: all 300ms linear;
+    color: white;
+    font-size: 13px;
+    margin-left: 3%;
+    overflow: hidden;
+  }
+  .forme {
+    flex-shrink: 0;
+    width: 60%;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    position: relative;
+    right: 2%;
+    overflow: hidden;
+    left: 0%;
+  }
+  .searchBar {
+    width: 80%;
+    height: 35px;
+    position: relative;
+    right: 5%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 11px;
+    padding: 2px;
+    background-color: #6868fc;
+    flex-shrink: 0;
+    padding-left: 10px;
+    font-family: "Poppins";
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+  }
+  .forme button {
+    padding: 2px 6px;
+    margin: 0px;
+    border: none;
+    margin-left: -15px;
+    border-radius: 0px 5px 5px 0px;
+    filter: grayscale(1000);
+    background-color: #292e3d;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
+    margin-right: 0%;
+  }
+  .logo2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 0%;
+  }
+  .num {
+    display: inline-block;
+    position: relative;
+    left: 33px;
+    font-size: x-small;
+    padding: 0px 5px;
+    border-radius: 10000px;
+    background-color: #8c8cff;
+    color: black;
+    bottom: 0px;
+  }
 }

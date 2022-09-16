@@ -165,3 +165,779 @@
 * {
   flex-shrink: 0;
 }
+@media screen and (max-width: 1388px) {
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-bottom: -50px;
+    cursor: pointer;
+    margin: 0px 20px 20px 20px;
+  }
+  .container {
+    background-color: #292e3d;
+    backdrop-filter: blur(10px);
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+  }
+  .buy {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.913);
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    transition: all 250ms linear;
+    width: 150px;
+    height: 45px;
+    margin-left: 180px;
+  }
+  .buy:hover {
+    background: rgb(52, 255, 106);
+    width: 200px;
+    margin-left: 130px;
+    color: black;
+    border-radius: 1000px 0px 0px 1000px;
+    padding: 0;
+  }
+  .matn {
+    font-size: x-small;
+  }
+  .image {
+    width: 80px;
+    height: 80px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .image,
+  .containeer .image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 45px;
+    margin-bottom: -20px;
+  }
+  .container {
+    background-color: #292e3d;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+  }
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    cursor: pointer;
+    margin: 0px 20px 20px 20px;
+  }
+
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+  }
+  .matn {
+    display: none;
+  }
+  .buy {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.913);
+    font-size: smaller;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 250ms linear;
+    width: 45%;
+    height: 15%;
+    margin: 40px 27.5%;
+  }
+  .containeer .title,
+  .title {
+    color: white;
+    font-size: small;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .buy:hover {
+    background: rgb(52, 255, 106);
+    color: black;
+    padding: 0;
+    margin: 40px 27.5%;
+    border-radius: 5px;
+    transition: all 250ms linear;
+    width: 45%;
+    height: 15%;
+  }
+  .containeer .btn,
+  .btn {
+    background-color: #ff8c3f;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 500ms linear;
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 44px;
+    margin-left: 0px;
+  }
+  .price {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 40%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+  .btn img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 150ms linear;
+  }
+}
+@media screen and (max-width: 666px) {
+  .image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 0px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 430px;
+    height: 230px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-bottom: -50px;
+    cursor: pointer;
+    margin: 0px 20px 20px 20px;
+    left: 60px;
+  }
+  .container {
+    background-color: #292e3d;
+    backdrop-filter: blur(10px);
+    width: 430px;
+    height: 230px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+  }
+  .containeer .btn {
+    margin-bottom: 25px;
+    margin-left: 170px;
+  }
+  .container:hover,
+  .containeer:hover {
+    background: #6868fc;
+    transform: translateY(-10px);
+    color: black;
+  }
+
+  .container:hover h3,
+  .container:hover p {
+    color: black;
+  }
+  .containeer .title {
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 80px;
+    text-align: center;
+  }
+  .title {
+    color: white;
+    font-size: medium;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .matn {
+    color: white;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    bottom: 10px;
+    font-size: smaller;
+    display: block;
+  }
+  .btn {
+    background-color: #ff8c3f;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 500ms linear;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+    height: 40px;
+    margin-bottom: 44px;
+    margin-left: 160px;
+  }
+  .btn p {
+    padding: -10px;
+    color: black;
+  }
+  .btn img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 150ms linear;
+  }
+  .buy {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.913);
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    transition: all 250ms linear;
+    width: 180px;
+    height: 45px;
+    margin-left: 250px;
+  }
+  .buy:hover {
+    background: rgb(52, 255, 106);
+    width: 200px;
+    margin-left: 230px;
+    color: black;
+    border-radius: 1000px 0px 0px 1000px;
+    padding: 0;
+  }
+  .doNot {
+    display: none;
+  }
+  .btn img:hover,
+  .containeer .btn img:hover {
+    background-color: rgb(52, 255, 106);
+  }
+  .btn .down:hover,
+  .containeer .btn .down:hover {
+    background-color: rgb(255, 75, 75);
+  }
+  .price {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 20%;
+    margin-right: -10px;
+    margin-bottom: 20px;
+  }
+  .container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+  }
+  .btn button {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+  * {
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .image {
+    width: 90px;
+    height: 90px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+  }
+  .containeer .image {
+    width: 90px;
+    height: 90px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-bottom: -50px;
+    cursor: pointer;
+    margin: 0px 20px 20px 20px;
+    left: 40px;
+  }
+  .container {
+    background-color: #292e3d;
+    backdrop-filter: blur(10px);
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+  }
+  .containeer .btn {
+    margin-bottom: 40px;
+    margin-left: 170px;
+  }
+  .container:hover,
+  .containeer:hover {
+    background: #6868fc;
+    transform: translateY(-10px);
+    color: black;
+  }
+
+  .container:hover h3,
+  .container:hover p {
+    color: black;
+  }
+  .containeer .title {
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 80px;
+    text-align: center;
+  }
+  .title {
+    color: white;
+    font-size: medium;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .matn {
+    color: white;
+    text-align: justify;
+    width: 40%;
+    position: relative;
+    bottom: 10px;
+    font-size: 10px;
+    display: block;
+  }
+  .btn {
+    background-color: #ff8c3f;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 500ms linear;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+    height: 40px;
+    margin-bottom: 44px;
+    margin-left: 160px;
+  }
+  .btn p {
+    padding: -10px;
+    color: black;
+  }
+  .btn img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 150ms linear;
+  }
+  .buy {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.913);
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    transition: all 250ms linear;
+    width: 180px;
+    height: 45px;
+    margin-left: 170px;
+  }
+  .buy:hover {
+    background: rgb(52, 255, 106);
+    width: 200px;
+    margin-left: 150px;
+    color: black;
+    height: 45px;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    margin-bottom: 44px;
+    padding: 0;
+  }
+  .doNot {
+    display: none;
+  }
+  .btn img:hover,
+  .containeer .btn img:hover {
+    background-color: rgb(52, 255, 106);
+  }
+  .btn .down:hover,
+  .containeer .btn .down:hover {
+    background-color: rgb(255, 75, 75);
+  }
+  .price {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 20%;
+    margin-right: -10px;
+    margin-bottom: 20px;
+  }
+  .container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+  }
+  .btn button {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+  * {
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-bottom: -50px;
+    cursor: pointer;
+    margin: 0px 20px 20px 20px;
+    left: 20px;
+  }
+  .container {
+    background-color: #292e3d;
+    backdrop-filter: blur(10px);
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 400px) {
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-bottom: -50px;
+    cursor: pointer;
+    margin: 0px 20px 70px 20px;
+    left: 20px;
+  }
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+  .container {
+    background-color: #292e3d;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+  }
+  .image {
+    width: 70px;
+    height: 70px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+  }
+  .containeer .image {
+    width: 70px;
+    height: 70px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .buy {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.913);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    transition: all 250ms linear;
+    width: 130px;
+    height: 45px;
+    margin-left: 168px;
+  }
+  .buy:hover {
+    background: rgb(52, 255, 106);
+    width: 150px;
+    margin-left: 148px;
+    color: black;
+    height: 45px;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    margin-bottom: 44px;
+    padding: 0;
+  }
+  .matn {
+    color: white;
+    text-align: justify;
+    width: 60%;
+    position: relative;
+    bottom: 10px;
+    font-size: 10px;
+    display: block;
+  }
+  .btn,
+  .containeer .btn {
+    background-color: #ff8c3f;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 500ms linear;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 44px;
+    margin-left: 100px;
+  }
+  .btn p {
+    padding: -10px;
+    color: black;
+  }
+  .btn img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 150ms linear;
+  }
+}
+@media screen and (max-width: 370px) {
+  .containeer {
+    flex-shrink: 0;
+    background-color: #292e3d;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-bottom: -50px;
+    cursor: pointer;
+    margin: 0px 20px 70px 20px;
+    left: 0px;
+  }
+  .container {
+    background-color: #292e3d;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+  }
+  .image {
+    width: 70px;
+    height: 70px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+  }
+  .containeer .image {
+    width: 70px;
+    height: 70px;
+    display: block;
+    z-index: 9;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0px 1000px 1000px 1000px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .buy {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.913);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    transition: all 250ms linear;
+    width: 130px;
+    height: 45px;
+    margin-left: 168px;
+  }
+  .buy:hover {
+    background: rgb(52, 255, 106);
+    width: 150px;
+    margin-left: 148px;
+    color: black;
+    height: 45px;
+    border-radius: 1000px 0px 0px 1000px;
+    margin-top: 10px;
+    margin-bottom: 44px;
+    padding: 0;
+  }
+  .matn {
+    color: white;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    bottom: 10px;
+    margin-left: 0%;
+    right: 20px;
+    font-size: 10px;
+    display: block;
+  }
+}

@@ -1,21 +1,156 @@
-.container h3{
-color: rgb(72, 72, 72);
-height: 30px;
-position: relative;
-top: 40px;
-opacity: 0.6;
-} 
-.container{
-    background-color: #f3dbb5;
-   margin-top: 200px;
-   bottom: 0%;
-   height: 60px;
-   border-radius: 5px 5px 0px 0px;
+.container h5 {
+  color: rgb(209, 209, 209);
+  height: 30px;
+  position: relative;
+  top: -80px;
+  opacity: 0.6;
 }
-.container h4{
-    width: 30%;
-    margin-left: 42%;
+.container {
+  background-color: #292e3d;
+  bottom: 0%;
+  border-radius: 15px 15px 0px 0px;
+  height: 400px;
+  position: relative;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  margin: 200px 0px 0px 0px;
+  padding: 0;
+  overflow: hidden;
+}
+.container h4 {
+  width: 30%;
+  margin-left: 42%;
+  position: relative;
+  bottom: 153px;
+  font-size: large;
+  color: white;
+}
+.contact {
+  width: 40%;
+  position: relative;
+  bottom: 250px;
+}
+.contact li img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  border-radius: 10px;
+  padding: 5px;
+}
+.contact li {
+  list-style: none;
+}
+.contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact li img:hover {
+  background-color: #ffffff;
+}
+.contact h3 {
+  position: relative;
+  top: -30px;
+  color: white;
+  text-align: center;
+}
+@media Screen and (max-width: 800px) {
+  .container {
+    background-color: #292e3d;
+    bottom: 0%;
+    border-radius: 15px 15px 0px 0px;
+    height: 600px;
+    overflow: hidden;
     position: relative;
-    bottom: 23px;
-    font-size: large;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 200px 0px 0px 0px;
+    padding: 0;
+  }
+  .contact {
+    width: 70%;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    right: 30px;
+    background-color: #1f1f20;
+    padding-top: 20px;
+    border-radius: 0px 1000px 1000px 0px;
+  }
+  .container h5 {
+    color: rgb(209, 209, 209);
+    height: 30px;
+    position: relative;
+    top: 150px;
+    font-size: x-small;
+    opacity: 0.6;
+  }
+  .container h4 {
+    width: 50%;
+    margin-left: 72%;
+    position: relative;
+    bottom: 0px;
+    top: 80px;
+    font-size: small;
+    color: white;
+  }
+}
+@media screen and (max-width: 666px) {
+  .container {
+    background-color: #292e3d;
+    bottom: 0%;
+    border-radius: 15px 15px 0px 0px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 200px 0px 0px 0px;
+    padding: 0;
+  }
+  .contact {
+    width: 90%;
+    position: relative;
+    height: 40%;
+    top: 70px;
+    bottom: 0px;
+    right: 30px;
+    background-color: transparent;
+    padding-top: 20px;
+    border-radius: 0px 1000px 1000px 0px;
+  }
+  .container h5 {
+    color: rgb(209, 209, 209);
+    height: 30px;
+    position: relative;
+    top: 150px;
+    font-size: x-small;
+    opacity: 0.6;
+  }
+  .container h4 {
+    width: 50%;
+    margin-left: 72%;
+    position: relative;
+    bottom: 0px;
+    top: 80px;
+    font-size: small;
+    color: white;
+  }
+  .contact ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contact li img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 200ms linear;
+    border-radius: 10px;
+    padding: 5px;
+  }
 }

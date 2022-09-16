@@ -1,13 +1,18 @@
 import React, { useContext, useState, useEffect } from "react";
 import styles from "./ProductsDetails.module.css";
 import down from "../Home/Cards/down.png";
+import axios from "axios";
 import up from "../Home/Cards/up.png";
 import trash from "../Home/Cards/trash.png";
 import { ProductContext } from "../../../Context/ProductContextProvider";
 const ProductsDetails = ({ match }) => {
-  const productsData = useContext(ProductContext);
   const id = JSON.parse(match.params.id)
-  const product = productsData[id - 1]
+  const [product , setProduct] = useState({})
+  useEffect( () => {
+   axios.get(`https://fakestoreapi.com/products/${id}`)
+   .then(Response => setProduct(Response.data))
+  
+  }) 
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>{product.title}</h2>

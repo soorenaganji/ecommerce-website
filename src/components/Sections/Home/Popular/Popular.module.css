@@ -1,26 +1,65 @@
 .container {
   width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: scroll;
+  height: 300px;
+  overflow: hidden;
   position: relative;
-  bottom: 20px;
+  top: 0px;
+  background-color: none;
+  margin-bottom: 20px;
 }
 .cont {
   width: 100%;
   height: 400px;
   position: relative;
-  top: 480px;
+  top: 500px;
   background: transparent;
   background-repeat: repeat-x;
   background-size: contain;
   border-radius: 20px;
+  background-color: #ababfc;
 }
 .cont h1 {
-  color: #9c8dfd;
-  background-color: #10121c;
-  margin-bottom: -5px;
+  color: black;
+}
+.arrowLeft {
+  border-radius: 1000px;
+  position: relative;
+  top: 200px;
+  z-index: 1000;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.arrowRight {
+  border-radius: 1000px;
+  position: relative;
+  bottom: 260px;
+  z-index: 1000;
+  left: 97%;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.container button {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .cont {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 350px;
+    background: transparent;
+    background-repeat: repeat-x;
+    background-size: contain;
+    border-radius: 20px;
+    background-color: #ababfc;
+  }
+  .container {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 666px) {
+  .cont {
+    top: 200px;
+    height: 400px;
+  }
 }

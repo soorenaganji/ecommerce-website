@@ -12,73 +12,6 @@
   text-align: center;
   font-size: 40px;
 }
-.buy {
-  border: none;
-  background-color: rgba(51, 51, 51, 0.913);
-  font-size: x-large;
-  cursor: pointer;
-  border-radius: 10px;
-  margin-top: 10px;
-  transition: all 250ms linear;
-  width: 300px;
-  height: 70px;
-  margin-left: 250px;
-}
-.buy:hover {
-  background: rgb(52, 255, 106);
-  color: black;
-  padding: 0;
-}
-.btn {
-  background-color: #6868fc;
-  color: rgb(0, 0, 0);
-  padding: 0px 5px;
-  border-radius: 5px;
-  position: relative;
-  transition: all 500ms linear;
-  font-size: 20px;
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 170px;
-  height: 70px;
-  margin-bottom: 44px;
-  margin-left: 160px;
-}
-.btn p {
-  padding: 0px 8px;
-  color: black;
-  font-size: x-large;
-}
-.btn img {
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: all 150ms linear;
-  background-color: #ffffff;
-}
-.doNot {
-  display: none;
-}
-.btn img:hover,
-.containeer .btn img:hover {
-  background-color: rgb(52, 255, 106);
-}
-.btn .down:hover,
-.containeer .btn .down:hover {
-  background-color: rgb(255, 75, 75);
-}
-.price {
-  color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
-  width: 20%;
-  margin-right: -10px;
-  font-size: x-large;
-}
 .main,
 .main2 {
   display: flex;
@@ -110,4 +43,65 @@
 }
 .category {
   color: #8f8fff;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+  }
+  .main,
+  .main2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+  }
+  .image {
+    width: 50%;
+    height: 300px;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .description {
+    width: 60%;
+    text-align: justify;
+    font-size: large;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+  }
+  .main,
+  .main2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+  }
+  .image {
+    width: 50%;
+    height: 200px;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .description {
+    width: 90%;
+    text-align: justify;
+    font-size: medium;
+  }
 }
